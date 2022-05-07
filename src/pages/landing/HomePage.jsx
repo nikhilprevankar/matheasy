@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -7,6 +7,8 @@ import NavBar from "../../components/NavBar";
 import TableMe from "../../components/TableMe";
 
 function HomePage() {
+  const [grossTotal, setGrossTotal] = useState(0);
+
   return (
     <Container>
       <Row>
@@ -15,15 +17,18 @@ function HomePage() {
         </Col>
       </Row>
       <Row>
-        <Col sm={12} >
-          <AlertMe/>
+        <Col sm={12}>
+          <AlertMe total={grossTotal} />
         </Col>
       </Row>
       <Row>
-        <Col sm={12} >
-          <TableMe/>
+        <Col sm={12}>
+          <TableMe updateGrossTotalFn={(total) => setGrossTotal(total)} />
         </Col>
       </Row>
+      <Col sm={12}>
+        <AlertMe total={grossTotal} />
+      </Col>
     </Container>
   );
 }
