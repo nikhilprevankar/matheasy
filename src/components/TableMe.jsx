@@ -81,7 +81,7 @@ function TableMe({ updateGrossTotalFn }) {
                     <InputGroup size="sm">
                       <FormControl
                         aria-label="Small"
-                        value={eachData?.weight}
+                        value={``+eachData?.weight}
                         id={eachData?.id}
                         onChange={(e) => calculate(e, "weight")}
                         type='number'
@@ -94,7 +94,7 @@ function TableMe({ updateGrossTotalFn }) {
                     <InputGroup size="sm">
                       <FormControl
                         aria-label="Small"
-                        value={eachData?.quantity}
+                        value={``+eachData?.quantity}
                         id={eachData?.id}
                         onChange={(e) => calculate(e, "quantity")}
                         type='number'
