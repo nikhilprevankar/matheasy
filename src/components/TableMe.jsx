@@ -84,6 +84,7 @@ function TableMe({ updateGrossTotalFn }) {
                         value={eachData?.weight}
                         id={eachData?.id}
                         onChange={(e) => calculate(e, "weight")}
+                        type='number'
                       />
                     </InputGroup>
                   </>
@@ -96,6 +97,7 @@ function TableMe({ updateGrossTotalFn }) {
                         value={eachData?.quantity}
                         id={eachData?.id}
                         onChange={(e) => calculate(e, "quantity")}
+                        type='number'
                       />
                     </InputGroup>
                   </>
