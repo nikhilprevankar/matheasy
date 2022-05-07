@@ -1,9 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ThemeProvider from 'react-bootstrap/ThemeProvider'
+import HomePage from "./pages/landing/HomePage";
 
 function App() {
   return (
-    "Hi"
+    <ThemeProvider
+      breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+    >
+      <HomePage />
+    </ThemeProvider>
   );
 }
 
