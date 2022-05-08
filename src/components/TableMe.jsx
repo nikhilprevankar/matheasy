@@ -65,7 +65,7 @@ function TableMe({ updateGrossTotalFn }) {
       <thead>
         <tr>
           <th>#</th>
-          <th>Weight</th>
+          <th>Weight/Price</th>
           <th>Quantity</th>
           <th>Total</th>
         </tr>
