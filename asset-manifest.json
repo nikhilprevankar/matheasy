@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/matheasy/static/css/main.38be36b0.css",
-    "main.js": "/matheasy/static/js/main.edbc1337.js",
+    "main.js": "/matheasy/static/js/main.ba4cae03.js",
     "static/js/787.4d2ebd2a.chunk.js": "/matheasy/static/js/787.4d2ebd2a.chunk.js",
     "index.html": "/matheasy/index.html",
     "main.38be36b0.css.map": "/matheasy/static/css/main.38be36b0.css.map",
-    "main.edbc1337.js.map": "/matheasy/static/js/main.edbc1337.js.map",
+    "main.ba4cae03.js.map": "/matheasy/static/js/main.ba4cae03.js.map",
     "787.4d2ebd2a.chunk.js.map": "/matheasy/static/js/787.4d2ebd2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38be36b0.css",
-    "static/js/main.edbc1337.js"
+    "static/js/main.ba4cae03.js"
   ]
 }
