@@ -1,12 +1,15 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
-import Badge from "react-bootstrap/Badge";
 
-function AlertMe({total}) {
+function AlertMe({ total, showModalFn }) {
   return (
-    <Alert>
-      <h2 className="d-flex justify-content-center" >
-        Gross Total <Badge bg="black">{total}</Badge>
+    <Alert variant={"dark"}>
+      <h2>
+        {`Gross Total `}
+        <Button variant="dark" size="lg" onClick={(e) => showModalFn(true)}>
+          <b>{total}</b>
+        </Button>
       </h2>
     </Alert>
   );

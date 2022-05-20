@@ -61,7 +61,7 @@ function TableMe({ updateGrossTotalFn }) {
   };
 
   return (
-    <Table striped bordered hover size="sm" variant="dark" responsive="sm">
+    <Table striped bordered hover size="sm" variant="light" responsive="sm">
       <thead>
         <tr>
           <th>#</th>
