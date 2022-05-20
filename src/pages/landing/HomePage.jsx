@@ -29,12 +29,19 @@ function HomePage() {
       )}
       <Row>
         <Col sm={12}>
-          <TableMe updateGrossTotalFn={(total) => setGrossTotal(total)} />
+          <TableMe
+            updateGrossTotalFn={(total) => setGrossTotal(total)}
+            isActive={!showModal}
+          />
         </Col>
       </Row>
-      <Col sm={12}>
-        <AlertMe total={grossTotal} showModalFn={setShowModal} />
-      </Col>
+      {showModal ? (
+        <></>
+      ) : (
+        <Col sm={12}>
+          <AlertMe total={grossTotal} showModalFn={setShowModal} />
+        </Col>
+      )}
     </Container>
   );
 }
