@@ -5,7 +5,7 @@ import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import { generate } from "shortid";
 
-function TableMe({ updateGrossTotalFn , isActive}) {
+function TableMe({ updateGrossTotalFn, isActive }) {
   const [tableData, setTableData] = useState([
     { id: generate(), weight: 0, quantity: 0, total: 0 },
   ]);
@@ -60,8 +60,7 @@ function TableMe({ updateGrossTotalFn , isActive}) {
     }
   };
 
-  if(!isActive)
-  return <></>;
+  if (!isActive) return <></>;
 
   return (
     <Table striped bordered hover size="sm" variant="light" responsive="sm">
